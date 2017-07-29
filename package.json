@@ -1,0 +1,13 @@
+{
+    "name": "hotel-jyotilok",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "dependencies": {
+        "bootstrap": "4.0.0-alpha.6",
+        "browser-sync": "^2.18.13",
+        "gulp": "^3.9.1",
+        "ie10-viewport-bug-workaround": "git+https://github.com/besrabasant/ie10-viewport-bug-workaround.git",
+        "jshint": "^2.9.5"
+    }
+}
