@@ -9,16 +9,20 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Welcome to Hotel JyotiLok</title>
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/weather-icons.min.css" />
     <link rel="stylesheet" type="text/css" href="css/ie10-viewport-bug-workaround.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
-<body>
+<body class="home-page">
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -28,21 +32,302 @@
     <!-- =========================================================-->
 
     <header class="header">
+        <div class="container-fluid">
 
+            <nav class="navbar navbar-toggleable-md navbar-light">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img class="logo" src="images/logo.png" alt="Hotel Jyotilok Logo">
+                </a>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Hotel Jyotilok<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Rooms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Event Halls</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="row contact-info no-gutters">
+                <div class="col">
+                    <div class="contact-card pull-left">
+                        Daltonganj, Palamu,<br> Jharkhand - 822101
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="contact-card pull-right">
+                        <span class="fa fa-phone"></span>Ph: +91-000-000-0000 <br>
+                        <span class="fa fa-envelope-o"></span>E-mail: rooms@hoteljyotilok.in
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
     <!-- =======================================================-->
     <!-- ========================= MAIN  =======================-->
     <!-- =======================================================-->
     <main class="main">
+        <section class="container-fluid slider">
+            <div class="row no-gutters">
+                <div class="col">
+                    <div class="slide" style="background-image: url('./images/home-page-banner.jpg')"></div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid push-100vh-down features">
+            <div class="row">
+                <div class="col brief-description">
+                    <div class="row justify-content-center">
+                        <div class="col-8 ">
+                            <h1>Hotel JyotiLok</h1>
+                            <h4>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae elit sed lectus laoreet fringilla hendrerit ac nibh. Morbi euismod lacus ut arcu porttitor aliquam. Suspendisse vehicula massa a dignissim egestas.
+                            </h4>
+                            <p>
+                                Sed justo odio, hendrerit vel sagittis a, consectetur a lorem. Nunc vitae gravida mauris. Vivamus euismod odio sit amet dolor vulputate vulputate. Sed ac turpis nisl. In vehicula pharetra augue quis volutpat. In nec sem vel quam blandit interdum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col room-amenities">
+                    <div class="row justify-content-center">
+                        <div class="col-8 ">
+                            <h3>Room Amenities:</h3>
+                            <ul>
+                                <li>En Suite bathroom with power shower</li>
+                                <li>Flat Screen satellite TV</li>
+                                <li>Bathrobes and slippers</li>
+                                <li>Exclusive toiletries</li>
+                                <li>Mini Bar</li>
+                                <li>Direct Dial Telephone</li>
+                                <li>Air-conditioning</li>
+                                <li>Complimentary safety deposit box</li>
+                                <li>24-hour room service</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid large-display">
+            <div class="row">
+                <div class="col" style="height: 75vh;"></div>
+            </div>
+        </section>
+        <section class="container-fluid other-featurettes">
+            <div class="row justify-content-center">
+                <div class="col-10 other-rooms">
+                    <h1>Our other rooms</h1>
+                    <div class="vertical-seperator"></div>
+                    <h4>Get under Jyotilok's skin and you'll discover a rich, often tempestuous history</h4>
 
+                    <div class="row justify-content-around">
+                        <div class="col">
+                            <div class="rooms">
+                                <img src="images/room-1.jpg" alt="">
+                                <div class="room-title">
+                                    Classic Room
+                                </div>
+                                <a class="learn-more" href="">
+                                    Learn More
+                                    <span class="arrow"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="rooms">
+                                <img src="images/room-2.jpg" alt="">
+                                <div class="room-title">
+                                    Deluxe Room
+                                </div>
+                                <a class="learn-more" href="">
+                                    Learn More
+                                   <span class="arrow"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="rooms">
+                                <img src="images/room-3.jpg" alt="">
+                                <div class="room-title">
+                                    Superior Room
+                                </div>
+                                <a class="learn-more" href="">
+                                    Learn More
+                                    <span class="arrow"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-10 other-services">
+                    <div class="row justify-contents-between">
+                        <div class="col">
+                            <div class="card service">
+                                <img class="card-img-top" src="images/spa.jpeg" alt="SPA">
+                                <div class="card-block">
+                                    <h4 class="card-title">Spa</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a class="learn-more" href="">
+                                        Learn More
+                                        <span class="arrow"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card service">
+                                <img class="card-img-top" src="images/activities.jpg" alt="SPA">
+                                <div class="card-block">
+                                    <h4 class="card-title">Activities</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a class="learn-more" href="">
+                                        Learn More
+                                        <span class="arrow"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card service">
+                                <img class="card-img-top" src="images/services.jpeg" alt="SPA">
+                                <div class="card-block">
+                                    <h4 class="card-title">Services</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a class="learn-more" href="">
+                                        Learn More
+                                        <span class="arrow"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card service">
+                                <img class="card-img-top" src="images/virtualtour.jpg" alt="SPA">
+                                <div class="card-block">
+                                    <h4 class="card-title">Virtual tour</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a class="learn-more" href="">
+                                        Learn More
+                                        <span class="arrow"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- =========================================================-->
     <!-- ========================= FOOTER  =======================-->
     <!-- =========================================================-->
     <footer class="footer">
+        <div class="container-fluid footer-info">
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <div class="row">
+                        <div class="col weather-info">
+                            <div class="row weather-widget">
+                                <div class="col-5 location">
+                                    Current weather
+                                    <span>Daltonganj, JH, IN</span>
+                                </div>
+                                <div class="col-4 temp">
+                                    17
+                                    <span class="temp-scale">
+                                        <ul>
+                                            <li class="active" title="Celcius">&deg;C</li>
+                                            <li title="Fahrenheit">&deg;F</li>
+                                        </ul>
+                                    </span>
+                                </div>
+                            </div>
 
+                        </div>
+                        <div class="col social-info">
+                            <div class="row">
+                                <div class="col-5">
+                                    Connect with us
+                                    <span>
+                                        Social media channels
+                                    </span>
+                                </div>
+                                <div class="col social-links">
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:void(0);"><span class="fa fa-facebook"></span></a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);"><span class="fa fa-twitter"></span></a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);"><span class="fa fa-google-plus"></span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid quick-links">
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="">About us</a>
+                            </li>
+                            <li>
+                                <a href="">Terms &amp; Conditions</a>
+                            </li>
+                            <li>
+                                <a href="">Gallery</a>
+                            </li>
+                            <li>
+                                <a href="">Careers</a>
+                            </li>
+                            <li>
+                                <a href="">Contact Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright-credits">
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <div class="row">
+                        <div class="col copyright">
+                            &copy; 2017. All rights reserved to <a href="">Hotel Jyotilok</a>.
+                        </div>
+                        <div class="col credits">
+                            Designed and Developed by <a href="http://theroguepixel.com">the Rogue Pix<small>x</small>el</a>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script type="text/javascript" src="js/jquery.min.js" charset="utf-8"></script>

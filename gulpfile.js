@@ -24,7 +24,10 @@ gulp.task('bootstrap', function() {
     
     gulp.src([
         'node_modules/bootstrap/dist/css/bootstrap.min.css',
-        'node_modules/ie10-viewport-bug-workaround/dist/*.min.css'
+        'node_modules/ie10-viewport-bug-workaround/dist/*.min.css',
+        'node_modules/font-awesome/css/*.min.css',
+        'node_modules/weather-icons/css/weather-icons.min.css'
+        
     ])
     .pipe( gulp.dest('./web/css') );
 
@@ -35,6 +38,12 @@ gulp.task('bootstrap', function() {
         'node_modules/ie10-viewport-bug-workaround/dist/*.min.js'
     ])
     .pipe( gulp.dest('./web/js') );
+
+    gulp.src([
+        'node_modules/font-awesome/fonts/*.*',
+        'node_modules/weather-icons/fonts/*.*'
+    ])
+    .pipe( gulp.dest('./web/fonts') );
 
 });
 

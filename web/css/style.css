@@ -1,0 +1,432 @@
+html {
+    font-family: "Lato";
+    font-size: 0.9rem;
+    letter-spacing: 0.02rem;
+}
+
+.header .container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.navbar {
+    padding: 0;
+    background-color: #ffffff;
+    border-bottom: #dedede;
+}
+
+.navbar .navbar-brand {
+    background-color: #000000;
+    padding: 10px;
+    width: 70px;
+    height: auto;
+    border-bottom: 1px solid #4f4f4f;
+}
+
+.navbar .navbar-brand .logo {
+    width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+    .navbar-toggleable-md .navbar-nav .nav-link {
+        padding-left: 0.8em;
+        padding-right: 0.8em;
+    }
+}
+
+.header .contact-info {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.header .contact-info .col {
+    position: relative;
+}
+
+.header .contact-info .contact-card {
+    background-color: #000;
+    color: #ffffff;
+    padding: 15px 30px;
+    font-family: "Libre Baskerville";
+    font-size: 0.8rem;
+    line-height: 2;
+}
+
+.header .contact-info .contact-card .fa {
+    margin-right: 10px;
+}
+
+.main .container-fluid.slider {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    z-index: -1;
+}
+
+.main .slider .slide {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.push-100vh-down {
+    margin-top: calc(100vh);
+}
+
+.home-page .features h1,
+.home-page .features h4,
+.home-page .features ul {
+    font-family: "Libre Baskerville";
+    line-height: 1.6;
+}
+
+.home-page .features .brief-description {
+    background-color: #ffffff;
+    position: relative;
+    top: -160px;
+    padding-top: 80px;
+}
+
+.home-page .features .brief-description h1 {
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.home-page .features .brief-description h4 {
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+}
+
+.home-page .features .room-amenities {
+    background-color: #f8f8f8;
+    position: relative;
+    margin-top: -62px;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+.home-page .features .room-amenities h3 {
+    font-size: 1.7rem;
+}
+
+.home-page .features .room-amenities ul {
+    list-style: none;
+    padding: 0;
+    font-size: 0.9rem;
+    margin-top: 30px;
+}
+
+.home-page .features .room-amenities ul li {
+    position: relative;
+    padding: 5px 0;
+    font-size: 0.9rem;
+}
+
+.home-page .features .room-amenities ul li:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    left: -30px;
+    background-color: #cccccc;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.home-page .features .room-amenities h3,
+.home-page .features .room-amenities ul li {
+    padding-left: 20px;
+}
+
+.home-page .large-display {
+    background-image: url('../images/bg-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.home-page .main .other-featurettes {
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.home-page .main .other-featurettes .other-rooms {
+    background-color: #fff;
+    margin-top: 80px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.home-page .main .other-featurettes h1,
+.home-page .main .other-featurettes h4 {
+    font-family: "Libre Baskerville"
+}
+
+.home-page .main .other-featurettes h1 {
+    font-size: 2.3em;
+    font-weight: 500;
+}
+
+.home-page .main .other-featurettes h4 {
+    font-size: 1.1em;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.home-page .main .other-rooms {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.home-page .main .other-rooms .rooms {
+    margin-top: 50px;
+    padding: 5px;
+    font-family: "Libre Baskerville";
+}
+
+.home-page .main .other-rooms .rooms img {
+    width: 100%;
+    height: auto;
+}
+
+.home-page .main .other-rooms .rooms .room-title {
+    font-size: 1.3rem;
+    padding: 30px 0 40px;
+}
+
+.home-page .main .other-rooms .rooms .learn-more,
+.home-page .main .other-services .service.card .learn-more {
+    color: #666;
+    font-style: italic;
+    font-size: 0.8rem;
+    padding: 15px 30px;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Libre Baskerville";
+}
+
+.home-page .main .other-rooms .rooms .learn-more:hover,
+.home-page .main .other-services .service.card .learn-more:hover {
+    text-decoration: none;
+}
+
+.home-page .main .other-rooms .rooms .learn-more .arrow,
+.home-page .main .other-services .service.card .learn-more .arrow {
+    width: 40px;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    vertical-align: top;
+    padding: 8px 0;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+.home-page .main .other-rooms .rooms .learn-more .arrow:before,
+.home-page .main .other-services .service.card .learn-more .arrow:before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #666;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.home-page .main .other-rooms .rooms .learn-more .arrow:after,
+.home-page .main .other-services .service.card .learn-more .arrow:after {
+    content: "";
+    width: 3px;
+    height: 3px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: rotate(45deg);
+    margin-top: -1px;
+    border-top: 1px solid #666;
+    border-right: 1px solid #666;
+}
+
+.home-page .main .other-services {
+    padding: 90px 0;
+}
+
+.home-page .main .other-services .service.card {
+    border-radius: 0;
+    border-color: #f8f8f8;
+    padding-bottom: 30px;
+}
+
+.home-page .main .other-services .service.card .card-img-top {
+    height: auto;
+    width: 100%;
+    border-radius: 0;
+}
+
+.home-page .main .other-services .service.card .card-title {
+    font-style: normal;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.home-page .main .other-services .service.card .card-text {
+    text-align: left;
+    line-height: 1.3;
+    margin-bottom: 30px;
+}
+
+.home-page .main .other-services .service.card .learn-more {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.vertical-seperator {
+    width: 2px;
+    height: 30px;
+    background-color: #D3CA7C;
+    margin: 25px auto 30px;
+}
+
+.footer .footer-info {
+    background-color: #282828;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer .footer-info .weather-widget,
+.footer .footer-info .social-info {
+    color: #ABABAB;
+    font-family: "Libre Baskerville";
+}
+
+.footer .footer-info .weather-widget .location,
+.footer .footer-info .social-info .col-5 {
+    font-size: 1.4rem;
+}
+
+.footer .footer-info .weather-widget .location span,
+.footer .footer-info .social-info .col-5 span {
+    font-size: 0.5em;
+    display: block;
+    font-family: "Lato";
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    padding-left: 5px;
+}
+
+.footer .footer-info .weather-widget .temp {
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+.footer .footer-info .weather-widget .temp .temp-scale {
+    font-size: 0.3em;
+    color: #ababab;
+    position: absolute;
+    top: 0;
+    padding: 10px;
+}
+
+.weather-widget .temp .temp-scale ul {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+}
+
+.weather-widget .temp .temp-scale ul:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    height: 13px;
+    width: 1px;
+    background-color: #ababab;
+    margin: 0 2px;
+}
+
+.weather-widget .temp .temp-scale ul li {
+    display: inline-block;
+    padding: 0 2px;
+    cursor: pointer;
+}
+
+.weather-widget .temp .temp-scale ul li.active {
+    color: #ffffff;
+}
+
+.social-info .social-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.social-info .social-links ul li {
+    display: inline-block;
+    flex: 1;
+    margin-top: 10px;
+}
+
+.social-info .social-links ul li a {
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+.footer .quick-links,
+.footer .copyright-credits {
+    background-color: #212121;
+}
+
+.footer .quick-links .col-10 {
+    border-bottom: 1px solid #3c3c3c;
+}
+
+.footer .quick-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.footer .quick-links ul li {
+    display: inline-block;
+}
+
+.footer .quick-links ul li a {
+    color: #fff;
+    font-family: "Libre Baskerville";
+    font-size: 0.75rem;
+    padding: 0 30px 0 0;
+}
+
+.footer .copyright-credits {
+    color: #ABABAB;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 0.75rem;
+}
+
+.footer .copyright-credits a {
+    color: #ffffff;
+}
+
+.footer .copyright-credits .copyright {
+    text-align: left;
+}
+
+.footer .copyright-credits .credits {
+    text-align: right;
+}

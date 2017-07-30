@@ -6,8 +6,10 @@
     "dependencies": {
         "bootstrap": "4.0.0-alpha.6",
         "browser-sync": "^2.18.13",
+        "font-awesome": "^4.7.0",
         "gulp": "^3.9.1",
         "ie10-viewport-bug-workaround": "git+https://github.com/besrabasant/ie10-viewport-bug-workaround.git",
-        "jshint": "^2.9.5"
+        "jshint": "^2.9.5",
+        "weather-icons": "git+https://github.com/besrabasant/weather-icons.git"
     }
 }
