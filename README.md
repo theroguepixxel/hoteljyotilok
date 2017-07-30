@@ -7,6 +7,8 @@
  * ie10-viewport-bug-workaround
  * gulp
  * browser-sync
+ * font-awesome
+ * weather-icons
 
  ```
  npm install
