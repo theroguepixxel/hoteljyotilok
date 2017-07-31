@@ -84,14 +84,40 @@
         <section class="container-fluid slider">
             <div class="row no-gutters">
                 <div class="col">
-                    <div class="slide" style="background-image: url('./images/home-page-banner.jpg')"></div>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="slide" style="background-image: url('./images/slide-1.jpg');"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="slide" style="background-image: url('./images/slide-2.jpg');"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="slide" style="background-image: url('./images/slide-3.jpg');"></div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+
+                    </div>
                 </div>
             </div>
             <div class="row no-gutters slider-controls justify-content-end">
                 <div class="col-6">
-                    <div class="scroll-downs">
-                        <div class="mousey">
-                            <div class="scroller"></div>
+                    <div class="scroll-indicator">
+                        <div class="mouse">
+                            <div class="wheel"></div>
+                        </div>
+                        <div>
+                            <span class="unu"></span> <span class="doi"></span> <span class="trei"></span>
                         </div>
                     </div>
                     <span class="scroll-info">Scroll down to explore more</span>

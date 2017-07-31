@@ -4,6 +4,11 @@ html {
     letter-spacing: 0.02rem;
 }
 
+.header {
+    position: relative;
+    z-index: 100;
+}
+
 .header .container-fluid {
     padding-right: 0;
     padding-left: 0;
@@ -62,49 +67,154 @@ html {
 
 /* Scroll mouse Animation */
 
-.scroll-downs {
-    position: relative;
-    top: 0;
-    left: 75px;
-    height: 55px;
-    width: 30px;
+.scroll-indicator {
+    width: 50px;
+    height: 60px;
     display: inline-block;
-}
-
-.mousey {
-    width: 3px;
-    padding: 10px 10px;
-    height: 35px;
-    border: 2px solid #fff;
-    border-radius: 25px;
-    opacity: 0.75;
-}
-
-.scroller {
-    width: 3px;
-    height: 10px;
-    border-radius: 25%;
-    background-color: #fff;
-    animation-name: scroll;
-    animation-duration: 2.2s;
-    animation-timing-function: cubic-bezier(.15, .41, .69, .94);
-    animation-iteration-count: infinite;
     position: relative;
-    left: -1px;
-    top: -6px;
+    margin-left: 75px;
+    top: 0;
 }
 
-@keyframes scroll {
+.scroll-indicator span {
+    display: block;
+    width: 6px;
+    height: 6px;
+    -ms-transform: rotate(45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    margin: 0 0 3px 7px;
+}
+
+.scroll-indicator .unu {
+    margin-top: 6px;
+}
+
+.scroll-indicator .unu,
+.scroll-indicator .doi,
+.scroll-indicator .trei {
+    -webkit-animation: mouse-scroll 1s infinite;
+    -moz-animation: mouse-scroll 1s infinite;
+}
+
+.scroll-indicator .unu {
+    -webkit-animation-delay: .1s;
+    -moz-animation-delay: .1s;
+    -webkit-animation-direction: alternate;
+}
+
+.scroll-indicator .doi {
+    -webkit-animation-delay: .2s;
+    -moz-animation-delay: .2s;
+    -webkit-animation-direction: alternate;
+}
+
+.scroll-indicator .trei {
+    -webkit-animation-delay: .3s;
+    -moz-animation-delay: .3s;
+    -webkit-animation-direction: alternate;
+}
+
+.scroll-indicator .mouse {
+    height: 30px;
+    width: 20px;
+    border-radius: 10px;
+    transform: none;
+    border: 2px solid white;
+    top: 170px;
+}
+
+.scroll-indicator .wheel {
+    height: 5px;
+    width: 2px;
+    display: block;
+    margin: 5px auto;
+    background: white;
+    position: relative;
+    top: -2px;
+}
+
+.scroll-indicator .wheel {
+    -webkit-animation: mouse-wheel 1.2s ease infinite;
+    -moz-animation: mouse-wheel 1.2s ease infinite;
+}
+
+@-webkit-keyframes mouse-wheel {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(9px);
+        -ms-transform: translateY(9px);
+        transform: translateY(9px);
+    }
+}
+
+@-moz-keyframes mouse-wheel {
+    0% {
+        top: 1px;
+    }
+    50% {
+        top: 4px;
+    }
+    100% {
+        top: 7px;
+    }
+}
+
+@-webkit-keyframes mouse-scroll {
     0% {
         opacity: 0;
     }
-    10% {
-        transform: translateY(0);
-        opacity: 1;
+    50% {
+        opacity: .5;
     }
     100% {
-        transform: translateY(15px);
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes mouse-scroll {
+    0% {
         opacity: 0;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes mouse-scroll {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes mouse-scroll {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
     }
 }
 
@@ -114,9 +224,8 @@ html {
     color: #ffffff;
     font-size: 0.8rem;
     display: inline-block;
-    top: -55%;
+    top: -25px;
     position: relative;
-    left: 110px;
 }
 
 
@@ -128,7 +237,7 @@ html {
     position: absolute;
     top: 0;
     padding: 0;
-    z-index: -1;
+    z-index: 0;
 }
 
 .main .slider .slide {
@@ -141,7 +250,71 @@ html {
 
 .main .slider .slider-controls {
     position: relative;
-    top: -60px;
+    top: -75px;
+    bottom: 30px;
+}
+
+.carousel .carousel-indicators {
+    left: 80%;
+    z-index: 100;
+}
+
+.carousel .carousel-indicators li {
+    border-radius: 50%;
+    background-color: transparent;
+    position: relative;
+    margin: 0 10px;
+}
+
+.carousel .carousel-indicators li:after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border: 2px solid transparent;
+}
+
+.carousel .carousel-indicators li.active:after {
+    background-color: transparent;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #ffffff;
+}
+
+.carousel .carousel-control-next .carousel-control-next-icon {
+    background-image: none;
+    width: 35px;
+    position: relative;
+    right: -25%;
+}
+
+.carousel .carousel-control-next .carousel-control-next-icon:before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-25%);
+}
+
+.carousel .carousel-control-next .carousel-control-next-icon:after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    right: 2px;
+    top: 50%;
 }
 
 .push-100vh-down {

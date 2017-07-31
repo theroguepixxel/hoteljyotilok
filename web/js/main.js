@@ -48,20 +48,18 @@
             $(scaleSelector).click(function(){
                 $(this).find('li').toggleClass('active');
 
-                var scale = $(this).find('li.active').attr('title');
+                defaultOptions.unit = $(this).find('li.active').attr('title');
 
-                fetchWeatherApi(scale);
+                fetchWeatherApi();
 
             });           
             
             // FETCH WEATHER
-            function fetchWeatherApi( unit ) {
-
-                var unitMetric = (unit == undefined)? tempScaleValue[defaultOptions.unit]: tempScaleValue[unit];
+            function fetchWeatherApi() {
 
                 var url = "http://api.openweathermap.org/data/2.5/weather?lat="+ defaultOptions.lat +
                     "&lon="+ defaultOptions.long +
-                    "&units="+ unitMetric +
+                    "&units="+ tempScaleValue[defaultOptions.unit] +
                     "&appid="+ defaultOptions.appid;
 
                 $.ajax({
