@@ -75,7 +75,6 @@
                     </div>
                 </div>
             </div>
-        </div>
     </header>
 
     <!-- =======================================================-->
@@ -85,7 +84,43 @@
         <section class="container-fluid slider">
             <div class="row no-gutters">
                 <div class="col">
-                    <div class="slide" style="background-image: url('./images/home-page-banner.jpg')"></div>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="slide" style="background-image: url('./images/slide-1.jpg');"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="slide" style="background-image: url('./images/slide-2.jpg');"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="slide" style="background-image: url('./images/slide-3.jpg');"></div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row no-gutters slider-controls justify-content-end">
+                <div class="col-6">
+                    <div class="scroll-indicator">
+                        <div class="mouse">
+                            <div class="wheel"></div>
+                        </div>
+                        <div>
+                            <span class="unu"></span> <span class="doi"></span> <span class="trei"></span>
+                        </div>
+                    </div>
+                    <span class="scroll-info">Scroll down to explore more</span>
                 </div>
             </div>
         </section>
@@ -245,13 +280,16 @@
                 <div class="col-10">
                     <div class="row">
                         <div class="col weather-info">
-                            <div class="row weather-widget">
+                            <div class="row weather-widget" id="weather-widget">
                                 <div class="col-5 location">
                                     Current weather
                                     <span>Daltonganj, JH, IN</span>
                                 </div>
-                                <div class="col-4 temp">
-                                    17
+                                <div class="col-5 temp">
+                                    <span class="weather-icon">
+                                    </span>
+                                    <span class="temp-value">
+                                    </span>
                                     <span class="temp-scale">
                                         <ul>
                                             <li class="active" title="Celcius">&deg;C</li>
@@ -290,7 +328,7 @@
             </div>
         </div>
         <div class="container-fluid quick-links">
-            <div class="row justify-content-center">
+            <div class="row no-gutters justify-content-center">
                 <div class="col-10">
                     <nav>
                         <ul>
