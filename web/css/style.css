@@ -59,6 +59,69 @@ html {
     margin-right: 10px;
 }
 
+
+/* Scroll mouse Animation */
+
+.scroll-downs {
+    position: relative;
+    top: 0;
+    left: 75px;
+    height: 55px;
+    width: 30px;
+    display: inline-block;
+}
+
+.mousey {
+    width: 3px;
+    padding: 10px 10px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+}
+
+.scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15, .41, .69, .94);
+    animation-iteration-count: infinite;
+    position: relative;
+    left: -1px;
+    top: -6px;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+}
+
+.scroll-info {
+    font-family: "Libre Baskerville";
+    font-style: italic;
+    color: #ffffff;
+    font-size: 0.8rem;
+    display: inline-block;
+    top: -55%;
+    position: relative;
+    left: 110px;
+}
+
+
+/* main parrt of the pages */
+
 .main .container-fluid.slider {
     height: 100vh;
     width: 100%;
@@ -74,6 +137,11 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+}
+
+.main .slider .slider-controls {
+    position: relative;
+    top: -60px;
 }
 
 .push-100vh-down {
@@ -303,7 +371,7 @@ html {
 .footer .footer-info {
     background-color: #282828;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 35px;
 }
 
 .footer .footer-info .weather-widget,
@@ -332,6 +400,13 @@ html {
     color: #ffffff;
 }
 
+.footer .footer-info .weather-widget .temp .weather-icon {
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    left: -5px;
+}
+
 .footer .footer-info .weather-widget .temp .temp-scale {
     font-size: 0.3em;
     color: #ababab;
@@ -345,26 +420,29 @@ html {
     padding: 0;
     display: inline-block;
     position: relative;
+    width: 40px;
 }
 
 .weather-widget .temp .temp-scale ul:before {
     content: "";
     position: absolute;
-    left: 50%;
+    left: 45%;
     height: 13px;
     width: 1px;
     background-color: #ababab;
-    margin: 0 2px;
 }
 
 .weather-widget .temp .temp-scale ul li {
     display: inline-block;
     padding: 0 2px;
     cursor: pointer;
+    position: absolute;
+    left: 50%;
 }
 
 .weather-widget .temp .temp-scale ul li.active {
     color: #ffffff;
+    left: 0;
 }
 
 .social-info .social-links ul {
@@ -397,8 +475,7 @@ html {
     list-style: none;
     padding: 0;
     margin: 0;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding: 40px 0;
 }
 
 .footer .quick-links ul li {
@@ -414,8 +491,8 @@ html {
 
 .footer .copyright-credits {
     color: #ABABAB;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 35px;
+    padding-bottom: 35px;
     font-size: 0.75rem;
 }
 
